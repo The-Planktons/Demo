@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULT | Secure Checkout</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vault: {
+                            red: '#b91c1c',     
+                            darkred: '#7f1d1d',
+                            white: '#ffffff',   
+                            offwhite: '#f8fafc',
+                            black: '#0a0a0a',   
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Anton', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-vault-offwhite text-vault-black font-body overflow-x-hidden selection:bg-vault-red selection:text-vault-white">
+
+    <!-- MINIMAL CHECKOUT HEADER -->
+    <header class="w-full bg-vault-white border-b-4 border-vault-black py-6">
+        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 flex justify-between items-center">
+            <a href="index.html" class="font-display text-4xl tracking-wider text-vault-red hover:text-vault-black transition-colors duration-300">
+                VAULT
+            </a>
+            <a href="shop.html" class="flex items-center text-vault-black hover:text-vault-red font-display tracking-widest uppercase transition-colors">
+                <span class="material-symbols-outlined mr-2">arrow_back</span>
+                Back to Shop
+            </a>
+        </div>
+    </header>
+
+    <main class="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 py-12 flex flex-col lg:flex-row gap-16 min-h-[85vh]">
+        
+        <!-- Left Side: Checkout Form -->
+        <div class="w-full lg:w-[62%]">
+            <h1 class="font-display text-4xl uppercase tracking-wider mb-8">Secure Checkout</h1>
+            
+            <form id="checkout-form" class="space-y-12">
+                
+                <!-- Contact Info -->
+                <div class="bg-vault-white p-8 border-2 border-vault-black shadow-[8px_8px_0px_0px_#0a0a0a]">
+                    <h3 class="font-display text-2xl uppercase mb-6 border-b-2 border-vault-black pb-2">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Email Address</label>
+                            <input type="email" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="newsletter" class="mr-3 accent-vault-red w-4 h-4" checked>
+                            <label for="newsletter" class="font-normal text-sm">Email me with news and offers</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Info -->
+                <div class="bg-vault-white p-8 border-2 border-vault-black shadow-[8px_8px_0px_0px_#0a0a0a]">
+                    <h3 class="font-display text-2xl uppercase mb-6 border-b-2 border-vault-black pb-2">Shipping Address</h3>
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">First Name</label>
+                                <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Last Name</label>
+                                <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Address</label>
+                            <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Apartment, suite, etc. (optional)</label>
+                            <input type="text" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">City</label>
+                                <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">State</label>
+                                <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">ZIP Code</label>
+                                <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Info -->
+                <div class="bg-vault-white p-8 border-2 border-vault-black shadow-[8px_8px_0px_0px_#0a0a0a]">
+                    <h3 class="font-display text-2xl uppercase mb-6 border-b-2 border-vault-black pb-2">Payment</h3>
+                    <p class="font-normal text-sm mb-6 text-vault-black/60 uppercase tracking-widest">All transactions are secure and encrypted.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Card Number</label>
+                            <input type="text" required placeholder="0000 0000 0000 0000" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Expiration Date</label>
+                                <input type="text" required placeholder="MM/YY" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                            <div>
+                                <label class="block font-display text-sm tracking-widest uppercase mb-2 text-vault-black/80">Security Code</label>
+                                <input type="text" required placeholder="CVC" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-2 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-rugged w-full bg-vault-red text-vault-white font-display text-3xl py-6 border-4 border-vault-black uppercase tracking-widest shadow-[8px_8px_0px_0px_#0a0a0a] hover:translate-y-1 hover:shadow-[4px_4px_0px_0px_#0a0a0a] transition-all">
+                    PLACE ORDER
+                </button>
+            </form>
+        </div>
+
+        <!-- Right Side: Order Summary -->
+        <div class="w-full lg:w-[38%]">
+            <div class="bg-vault-white p-8 border-4 border-vault-black sticky top-8">
+                <h3 class="font-display text-3xl uppercase mb-8 border-b-4 border-vault-black pb-4">Order Summary</h3>
+                
+                <div id="checkout-cart-items" class="space-y-6 mb-8 max-h-[40vh] overflow-y-auto custom-scrollbar pr-2">
+                    <!-- Items rendered here by JS -->
+                </div>
+
+                <div class="border-t-2 border-vault-black/20 pt-6 space-y-4">
+                    <div class="flex justify-between items-center font-normal text-sm uppercase tracking-widest">
+                        <span>Subtotal</span>
+                        <span id="checkout-subtotal">$0.00</span>
+                    </div>
+                    <div class="flex justify-between items-center font-normal text-sm uppercase tracking-widest">
+                        <span>Shipping</span>
+                        <span id="checkout-shipping">Calculated at next step</span>
+                    </div>
+                    <div class="flex justify-between items-center font-normal text-sm uppercase tracking-widest">
+                        <span>Taxes</span>
+                        <span id="checkout-taxes">$0.00</span>
+                    </div>
+                </div>
+
+                <div class="border-t-4 border-vault-black pt-6 mt-6 flex justify-between items-end">
+                    <span class="font-display text-2xl uppercase">Total</span>
+                    <span id="checkout-total" class="font-display text-4xl text-vault-red">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (Minimal) -->
+    <footer class="bg-vault-black text-vault-white py-8 border-t-8 border-vault-red mt-auto">
+        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 text-center">
+            <p class="text-xs font-light text-vault-white/40 uppercase tracking-widest">&copy; 2026 VAULT APPAREL INC. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Checkout Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(localStorage.getItem('vault_cart')) || [];
+            const container = document.getElementById('checkout-cart-items');
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<p class="text-vault-black/50 font-display text-xl text-center my-10">YOUR CART IS EMPTY.</p>';
+                return;
+            }
+
+            let subtotal = 0;
+            container.innerHTML = '';
+
+            cart.forEach(item => {
+                subtotal += item.price * item.quantity;
+                const itemHTML = `
+                    <div class="flex gap-4 items-center">
+                        <div class="relative w-20 aspect-[3/4] border-2 border-vault-black flex-shrink-0">
+                            <img src="${item.image}" class="w-full h-full object-cover">
+                            <span class="absolute -top-2 -right-2 bg-vault-red text-vault-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full border border-vault-white">${item.quantity}</span>
+                        </div>
+                        <div class="flex-1">
+                            <h5 class="font-display text-lg uppercase leading-tight">${item.name}</h5>
+                            <p class="font-light text-xs text-vault-black/60 uppercase mt-1">Size: ${item.size}</p>
+                        </div>
+                        <div class="font-display text-xl">
+                            $${(item.price * item.quantity).toFixed(2)}
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', itemHTML);
+            });
+
+            // Calculate totals
+            const taxes = subtotal * 0.08; // 8% tax mock
+            const shipping = subtotal > 150 ? 0 : 15.00; // Free shipping over $150
+            const total = subtotal + taxes + shipping;
+
+            document.getElementById('checkout-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+            document.getElementById('checkout-taxes').innerText = `$${taxes.toFixed(2)}`;
+            document.getElementById('checkout-shipping').innerText = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
+            document.getElementById('checkout-total').innerText = `$${total.toFixed(2)}`;
+
+            // Form Submit Mock
+            document.getElementById('checkout-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Success! Your Vault order has been placed in this demo.');
+                localStorage.removeItem('vault_cart');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>

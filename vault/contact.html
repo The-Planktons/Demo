@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULT | Contact & Support</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vault: {
+                            red: '#b91c1c',     
+                            darkred: '#7f1d1d',
+                            white: '#ffffff',   
+                            offwhite: '#f8fafc',
+                            black: '#0a0a0a',   
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Anton', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-vault-offwhite text-vault-black font-body overflow-x-hidden selection:bg-vault-red selection:text-vault-white">
+
+    <!-- HEADER -->
+    <header class="fixed w-full top-0 z-50 bg-vault-white/80 backdrop-blur-md border-b-4 border-vault-black transition-all duration-300">
+        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-display text-4xl tracking-wider text-vault-red hover:text-vault-black transition-colors duration-300">
+                        VAULT
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-12">
+                    <a href="shop.html?category=men" class="font-display text-xl tracking-widest text-vault-black hover:text-vault-red transition-colors duration-300 relative group">
+                        MEN
+                        <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="shop.html?category=women" class="font-display text-xl tracking-widest text-vault-black hover:text-vault-red transition-colors duration-300 relative group">
+                        WOMEN
+                        <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="shop.html?category=kids" class="font-display text-xl tracking-widest text-vault-black hover:text-vault-red transition-colors duration-300 relative group">
+                        KIDS
+                        <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <div class="flex items-center space-x-6">
+                    <form id="header-search-form" class="relative flex items-center group">
+                        <input id="header-search-input" type="text" placeholder="SEARCH VAULT" class="w-0 opacity-0 group-hover:w-48 group-hover:opacity-100 focus:w-48 focus:opacity-100 transition-all duration-300 border-b-2 border-vault-black bg-transparent outline-none pb-1 mr-2 font-display text-sm tracking-widest placeholder-vault-black/30">
+                        <button type="submit" class="text-vault-black group-hover:text-vault-red focus:text-vault-red transition-colors duration-300">
+                            <span class="material-symbols-outlined text-3xl">search</span>
+                        </button>
+                    </form>
+                    <button class="cart-toggle-btn text-vault-black hover:text-vault-red transition-colors duration-300 relative">
+                        <span class="material-symbols-outlined text-3xl">shopping_cart</span>
+                        <span class="cart-count absolute -top-1 -right-2 bg-vault-red text-vault-white font-display text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                    </button>
+                    <button class="md:hidden text-vault-black hover:text-vault-red transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Contact Split Layout -->
+        <section class="min-h-[85vh] w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 py-16 flex flex-col lg:flex-row gap-16">
+            
+            <!-- Information -->
+            <div class="w-full lg:w-[38%]">
+                <h1 class="font-display text-5xl md:text-7xl uppercase tracking-wider mb-6">Hit <span class="text-vault-red">Us Up.</span></h1>
+                <p class="font-normal text-vault-black/80 leading-relaxed mb-12 text-base">
+                    Got a question about an order, need sizing advice, or just want to tell us how much you love your new jacket? Reach out. Our support team is engineered to be as relentless as our apparel.
+                </p>
+
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="font-display text-xl uppercase mb-2">Customer Support</h4>
+                        <p class="font-normal text-vault-black/80 text-base">support@vaultapparel.demo</p>
+                        <p class="font-normal text-vault-black/80 text-base">1-800-VAULT-US (Mon-Fri, 9am-5pm EST)</p>
+                    </div>
+                    <div>
+                        <h4 class="font-display text-xl uppercase mb-2">Headquarters</h4>
+                        <p class="font-normal text-vault-black/80 text-base">1248 Rugged Ave, Suite 300<br>New York, NY 10012</p>
+                    </div>
+                    <div>
+                        <h4 class="font-display text-xl uppercase mb-2">Wholesale Inquiries</h4>
+                        <p class="font-normal text-vault-black/80 text-base">wholesale@vaultapparel.demo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="w-full lg:w-[62%] bg-vault-white p-8 md:p-12 border-4 border-vault-black shadow-[8px_8px_0px_0px_#b91c1c]">
+                <h3 class="font-display text-3xl uppercase mb-8 border-b-2 border-vault-black pb-4">Send a Message</h3>
+                
+                <form onsubmit="event.preventDefault(); alert('Message Sent! (Demo)');" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2">First Name</label>
+                            <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-3 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                        <div>
+                            <label class="block font-display text-sm tracking-widest uppercase mb-2">Last Name</label>
+                            <input type="text" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-3 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block font-display text-sm tracking-widest uppercase mb-2">Email Address</label>
+                        <input type="email" required class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-3 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                    </div>
+
+                    <div>
+                        <label class="block font-display text-sm tracking-widest uppercase mb-2">Order Number (Optional)</label>
+                        <input type="text" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-3 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black">
+                    </div>
+
+                    <div>
+                        <label class="block font-display text-sm tracking-widest uppercase mb-2">Message</label>
+                        <textarea required rows="4" class="w-full bg-transparent border-b-2 border-vault-black/30 px-0 py-3 focus:outline-none focus:border-vault-red transition-colors font-normal text-vault-black resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-rugged w-full bg-vault-black text-vault-white font-display text-2xl py-5 border-2 border-vault-black uppercase tracking-widest hover:border-vault-black hover:text-vault-white shadow-[4px_4px_0px_0px_#0a0a0a]">
+                        SUBMIT INQUIRY
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-vault-black text-vault-white pt-20 pb-10 border-t-8 border-vault-red">
+        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="font-display text-2xl uppercase mb-6">Collections</h4>
+                    <ul class="space-y-3 font-light text-vault-white/70 uppercase tracking-widest text-sm">
+                        <li><a href="shop.html?category=men" class="hover:text-vault-white transition-colors">Men's Apparel</a></li>
+                        <li><a href="shop.html?category=women" class="hover:text-vault-white transition-colors">Women's Apparel</a></li>
+                        <li><a href="shop.html?category=kids" class="hover:text-vault-white transition-colors">Kids' Apparel</a></li>
+                        <li><a href="shop.html" class="hover:text-vault-white transition-colors">All Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="font-display text-2xl uppercase mb-6">Support</h4>
+                    <ul class="space-y-3 font-light text-vault-white/70 uppercase tracking-widest text-sm">
+                        <li><a href="contact.html" class="hover:text-vault-white transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-vault-white transition-colors">Shipping & Returns</a></li>
+                        <li><a href="contact.html" class="hover:text-vault-white transition-colors">Size Guide</a></li>
+                        <li><a href="contact.html" class="text-vault-red transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="font-display text-2xl uppercase mb-6">The Vault</h4>
+                    <ul class="space-y-3 font-light text-vault-white/70 uppercase tracking-widest text-sm">
+                        <li><a href="about.html" class="hover:text-vault-white transition-colors">Our Story</a></li>
+                        <li><a href="about.html" class="hover:text-vault-white transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-vault-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-vault-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="font-display text-4xl uppercase mb-4 text-vault-red tracking-wider">VAULT</h4>
+                    <p class="font-light text-sm text-vault-white/70 mb-6 leading-relaxed">
+                        Join our inner circle. Gain early access to drops and exclusive events.
+                    </p>
+                    <div class="flex">
+                        <input type="email" placeholder="EMAIL ADDRESS" class="bg-transparent border-b-2 border-vault-white/30 text-vault-white px-0 py-2 w-full focus:outline-none focus:border-vault-red font-light text-sm transition-colors rounded-none placeholder-vault-white/30">
+                        <button class="ml-4 font-display uppercase tracking-widest hover:text-vault-red transition-colors">Join</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-vault-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-light text-vault-white/40 uppercase tracking-widest">
+                <p>&copy; 2026 VAULT APPAREL INC. ALL RIGHTS RESERVED.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-vault-white transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-vault-white transition-colors">Twitter</a>
+                    <a href="#" class="hover:text-vault-white transition-colors">Tiktok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full md:w-96 bg-vault-white border-l-4 border-vault-black shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-50 flex flex-col">
+        <div class="p-6 border-b-4 border-vault-black flex justify-between items-center bg-vault-red text-vault-white">
+            <h2 class="font-display text-3xl uppercase tracking-wider">Your Vault</h2>
+            <button id="close-cart-btn" class="hover:text-vault-black transition-colors">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar">
+            <!-- Cart Items Injected Here -->
+        </div>
+        <div class="p-6 border-t-4 border-vault-black bg-vault-offwhite">
+            <div class="flex justify-between items-center mb-6">
+                <span class="font-display text-xl uppercase">Subtotal</span>
+                <span id="cart-subtotal" class="font-display text-2xl text-vault-red">$0.00</span>
+            </div>
+            <a href="checkout.html" class="btn-rugged block text-center w-full bg-vault-black text-vault-white font-display text-2xl py-4 border-2 border-vault-black uppercase tracking-widest hover:border-vault-black hover:text-vault-white shadow-[4px_4px_0px_0px_#b91c1c]">
+                SECURE CHECKOUT
+            </a>
+        </div>
+    </div>
+    
+    <!-- CART OVERLAY -->
+    <div id="cart-overlay" class="fixed inset-0 bg-vault-black/50 z-40 hidden backdrop-blur-sm transition-opacity duration-300 opacity-0"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

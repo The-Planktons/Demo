@@ -1,0 +1,118 @@
+/* vault/css/style.css */
+
+/* Custom Animations and Overrides */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Rugged Luxury Button Effect */
+.btn-rugged {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+}
+
+.btn-rugged::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0a0a0a; /* Black hover state */
+    transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.btn-rugged:hover::before {
+    width: 100%;
+}
+
+.btn-rugged:hover {
+    color: #ffffff !important;
+    border-color: #0a0a0a;
+}
+
+/* Premium Rugged Card Hover */
+.product-card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, box-shadow;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0px 0px #0a0a0a;
+}
+
+/* Staggered Fade Up for Grid Elements */
+.stagger-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sidebar Luxury Link Hover */
+.luxury-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+.luxury-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #b91c1c;
+    transition: width 0.3s ease;
+}
+.luxury-link:hover::after, .luxury-link.active::after {
+    width: 100%;
+}
+
+
+/* Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #991b1b;
+}
+
+/* Image Grayscale to Color Reveal */
+.img-reveal {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.group:hover .img-reveal {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}

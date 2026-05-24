@@ -1,0 +1,184 @@
+[
+    { 
+        "id": 1, 
+        "name": "Crimson Moto Jacket", 
+        "price": 245.0, 
+        "category": "men", 
+        "subcategory": "outerwear", 
+        "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1974&auto=format&fit=crop", 
+        "badge": "NEW",
+        "tags": ["red", "jacket", "leather", "moto", "biker"]
+    },
+    { 
+        "id": 2, 
+        "name": "Vault Cargo Denim", 
+        "price": 120.0, 
+        "category": "men", 
+        "subcategory": "bottoms", 
+        "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=1926&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["jeans", "pants", "cargo", "denim", "blue"]
+    },
+    { 
+        "id": 3, 
+        "name": "Heavyweight Graphic Tee", 
+        "price": 45.0, 
+        "category": "men", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["tshirt", "t-shirt", "graphic", "black", "heavyweight"]
+    },
+    { 
+        "id": 4, 
+        "name": "Onyx Chain Necklace", 
+        "price": 85.0, 
+        "category": "men", 
+        "subcategory": "accessories", 
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=2070&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["jewelry", "chain", "necklace", "silver", "onyx"]
+    },
+    { 
+        "id": 5, 
+        "name": "Onyx Graphic Tee", 
+        "price": 55.0, 
+        "category": "women", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=2070&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["tshirt", "t-shirt", "graphic", "black", "onyx"]
+    },
+    { 
+        "id": 6, 
+        "name": "Vault Leather Belt", 
+        "price": 65.0, 
+        "originalPrice": 85.0, 
+        "category": "women", 
+        "subcategory": "accessories", 
+        "image": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop", 
+        "badge": "SALE",
+        "tags": ["belt", "leather", "black", "waist"]
+    },
+    { 
+        "id": 7, 
+        "name": "Distressed Wide Leg Jeans", 
+        "price": 110.0, 
+        "category": "women", 
+        "subcategory": "bottoms", 
+        "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["jeans", "denim", "pants", "distressed", "blue"]
+    },
+    { 
+        "id": 8, 
+        "name": "Scarlet Trench Coat", 
+        "price": 290.0, 
+        "category": "women", 
+        "subcategory": "outerwear", 
+        "image": "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=1974&auto=format&fit=crop", 
+        "badge": "NEW",
+        "tags": ["coat", "trench", "red", "scarlet", "jacket"]
+    },
+    { 
+        "id": 9, 
+        "name": "Mini Vault Hoodie", 
+        "price": 40.0, 
+        "category": "kids", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?q=80&w=1906&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["hoodie", "sweatshirt", "gray", "mini"]
+    },
+    { 
+        "id": 10, 
+        "name": "Kids Cargo Joggers", 
+        "price": 45.0, 
+        "category": "kids", 
+        "subcategory": "bottoms", 
+        "image": "https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?q=80&w=2070&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["pants", "joggers", "cargo", "kids"]
+    },
+    { 
+        "id": 11, 
+        "name": "Youth Denim Jacket", 
+        "price": 65.0, 
+        "category": "kids", 
+        "subcategory": "outerwear", 
+        "image": "https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=1974&auto=format&fit=crop", 
+        "badge": "NEW",
+        "tags": ["jacket", "denim", "blue", "youth"]
+    },
+    { 
+        "id": 12, 
+        "name": "Vault Snapback Cap", 
+        "price": 25.0, 
+        "category": "kids", 
+        "subcategory": "accessories", 
+        "image": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["hat", "cap", "snapback", "black"]
+    },
+    { 
+        "id": 13, 
+        "name": "Heavyweight Flannel", 
+        "price": 85.0, 
+        "category": "men", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1516826957135-700dde4d18fa?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["shirt", "flannel", "plaid", "heavyweight"]
+    },
+    { 
+        "id": 14, 
+        "name": "Tactical Vest", 
+        "price": 110.0, 
+        "category": "men", 
+        "subcategory": "outerwear", 
+        "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1974&auto=format&fit=crop", 
+        "badge": "NEW",
+        "tags": ["vest", "tactical", "black", "outerwear"]
+    },
+    { 
+        "id": 15, 
+        "name": "Ribbed Knit Top", 
+        "price": 60.0, 
+        "category": "women", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["top", "knit", "ribbed", "white"]
+    },
+    { 
+        "id": 16, 
+        "name": "Vault Leather Tote", 
+        "price": 250.0, 
+        "category": "women", 
+        "subcategory": "accessories", 
+        "image": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["bag", "tote", "leather", "black", "accessories"]
+    },
+    { 
+        "id": 17, 
+        "name": "Youth Graphic Tee", 
+        "price": 30.0, 
+        "category": "kids", 
+        "subcategory": "tops", 
+        "image": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=1974&auto=format&fit=crop", 
+        "badge": null,
+        "tags": ["tshirt", "t-shirt", "graphic", "kids"]
+    },
+    { 
+        "id": 18, 
+        "name": "Kids Beanie", 
+        "price": 20.0, 
+        "category": "kids", 
+        "subcategory": "accessories", 
+        "image": "https://images.unsplash.com/photo-1542157585-ef20bfc74b76?q=80&w=1974&auto=format&fit=crop", 
+        "badge": "SALE",
+        "originalPrice": 25.0,
+        "tags": ["hat", "beanie", "winter", "accessories"]
+    }
+]
