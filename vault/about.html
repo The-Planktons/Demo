@@ -65,6 +65,14 @@
                         KIDS
                         <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
                     </a>
+                    <a href="about.html" class="font-display text-xl tracking-widest text-vault-black hover:text-vault-red transition-colors duration-300 relative group">
+                        OUR STORY
+                        <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="font-display text-xl tracking-widest text-vault-black hover:text-vault-red transition-colors duration-300 relative group">
+                        SUPPORT
+                        <span class="absolute -bottom-2 left-0 w-0 h-1 bg-vault-red transition-all duration-300 group-hover:w-full"></span>
+                    </a>
                 </nav>
 
                 <div class="flex items-center space-x-6">
@@ -78,13 +86,30 @@
                         <span class="material-symbols-outlined text-3xl">shopping_cart</span>
                         <span class="cart-count absolute -top-1 -right-2 bg-vault-red text-vault-white font-display text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
                     </button>
-                    <button class="md:hidden text-vault-black hover:text-vault-red transition-colors duration-300">
+                    <button id="mobile-menu-btn" class="md:hidden text-vault-black hover:text-vault-red transition-colors duration-300">
                         <span class="material-symbols-outlined text-3xl">menu</span>
                     </button>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobile-menu-drawer" class="fixed inset-y-0 left-0 w-full bg-vault-white border-r-4 border-vault-black shadow-2xl transform -translate-x-full transition-transform duration-500 ease-in-out z-[60] flex flex-col md:hidden">
+        <div class="p-6 border-b-4 border-vault-black flex justify-between items-center bg-vault-red text-vault-white">
+            <h2 class="font-display text-3xl uppercase tracking-wider">MENU</h2>
+            <button id="close-mobile-menu-btn" class="hover:text-vault-black transition-colors">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <div class="flex-1 overflow-y-auto p-8 space-y-8 flex flex-col items-center justify-center">
+            <a href="shop.html?category=men" class="font-display text-4xl tracking-widest text-vault-black hover:text-vault-red transition-colors">MEN</a>
+            <a href="shop.html?category=women" class="font-display text-4xl tracking-widest text-vault-black hover:text-vault-red transition-colors">WOMEN</a>
+            <a href="shop.html?category=kids" class="font-display text-4xl tracking-widest text-vault-black hover:text-vault-red transition-colors">KIDS</a>
+            <a href="about.html" class="font-display text-4xl tracking-widest text-vault-black hover:text-vault-red transition-colors">OUR STORY</a>
+            <a href="contact.html" class="font-display text-4xl tracking-widest text-vault-black hover:text-vault-red transition-colors">SUPPORT</a>
+        </div>
+    </div>
 
     <main class="pt-20">
         <!-- Hero Story -->

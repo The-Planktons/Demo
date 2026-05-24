@@ -155,6 +155,21 @@ function closeCart() {
     }
 }
 
+// Mobile Menu Toggles
+function openMobileMenu() {
+    const drawer = document.getElementById('mobile-menu-drawer');
+    if(drawer) {
+        drawer.classList.remove('-translate-x-full');
+    }
+}
+
+function closeMobileMenu() {
+    const drawer = document.getElementById('mobile-menu-drawer');
+    if(drawer) {
+        drawer.classList.add('-translate-x-full');
+    }
+}
+
 /* -----------------------------------------
    SEARCH LOGIC
 ----------------------------------------- */
@@ -432,6 +447,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (e.target.closest('#close-cart-btn') || e.target.closest('#cart-overlay')) {
             closeCart();
+        }
+        if (e.target.closest('#mobile-menu-btn')) {
+            e.preventDefault();
+            openMobileMenu();
+        }
+        if (e.target.closest('#close-mobile-menu-btn')) {
+            e.preventDefault();
+            closeMobileMenu();
         }
     });
 });
